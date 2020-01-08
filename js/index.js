@@ -65,10 +65,12 @@ lastNav.style.color = "green";
 nav.appendChild(lastNav);
 
 // .cta
-const linebreak = document.createElement("br");
-
 const h1 = document.querySelector("h1");
-h1.textContent = "DOM IS AWESOME";
+h1.setAttribute("style", "white-space: pre;");
+
+h1.textContent = "DOM \r\n";
+h1.textContent += "IS \r\n";
+h1.textContent += "AWESOME";
 
 const button = document.querySelector("button");
 button.textContent = "Get Started";
@@ -105,7 +107,11 @@ const contact_h4 = document.querySelector(".contact h4");
 contact_h4.textContent = "Contact";
 
 const contact_p = document.querySelectorAll(".contact p");
-contact_p[0].textContent = "123 Way 456 Street Somewhere, USA";
+
+contact_p[0].setAttribute("style", "white-space: pre;");
+contact_p[0].textContent = "123 Way 456 Street \r\n";
+contact_p[0].textContent += "Somewhere, USA";
+
 contact_p[1].textContent = "1 (888) 888-8888";
 contact_p[2].textContent = "sales@greatidea.io";
 
